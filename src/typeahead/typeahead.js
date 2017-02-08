@@ -136,6 +136,7 @@ angular.module('ui.bootstrap.typeahead', ['ui.bootstrap.debounce', 'ui.bootstrap
       hintInputElem = element.clone();
       hintInputElem.attr('placeholder', '');
       hintInputElem.attr('tabindex', '-1');
+      hintInputElem.attr('aria-hidden', 'true');
       hintInputElem.val('');
       hintInputElem.css({
         'position': 'absolute',
